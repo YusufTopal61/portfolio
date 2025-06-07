@@ -66,9 +66,9 @@ const personalInfo = [
 ]
 
 const storyParagraphs = [
-  'Als 19-jarige developer ben ik gepassioneerd over het creëren van innovatieve digitale oplossingen. Momenteel studeer ik HBO-ICT Software Engineering aan de Hogeschool van Amsterdam, waar ik mijn technische vaardigheden verder ontwikkel.',
-  'Mijn reis in de programmeerwereld begon met nieuwsgierigheid naar hoe websites en applicaties werken. Sindsdien heb ik mezelf ontwikkeld tot een fullstack developer die zowel frontend als backend technologieën beheerst.',
-  'Ik hou van uitdagingen en het oplossen van complexe problemen door middel van code. Elke dag leer ik iets nieuws en streef ik ernaar om betere, efficiëntere oplossingen te bouwen.',
+  'Ik ben Yusuf, 19 jaar oud en ik woon in Amsterdam-Noord. Ik ben rustig, zelfstandig en iemand die graag anderen helpt.',
+  'Ik werk graag aan duidelijke en overzichtelijke projecten, en vind het fijn als dingen logisch in elkaar zitten. Ik kan goed zelfstandig werken, maar ook goed samenwerken.',
+  'Wat ik leuk vind aan development is dat je zelf iets moois en bruikbaars kunt maken. Vooral het ontwerpen en bouwen van moderne en gebruiksvriendelijke websites vind ik leuk.'
 ]
 
 const skills = {

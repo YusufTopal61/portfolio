@@ -131,13 +131,23 @@ const submitStatus = ref<'idle' | 'success'>('idle')
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com',
-    icon: '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>' // gebruik jouw volledige pad hier
+    url: 'https://github.com/YusufTopal61',
+    icon: `
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.8-1.4-3.8-1.4-.6-1.4-1.5-1.8-1.5-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 1.4 2 1.4 1.1 2 2.9 1.4 3.6 1.1.1-.8.4-1.4.7-1.8-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.2 1.8-.4 2.8-.4s1.9.1 2.8.4c2.1-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.4 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"
+        />
+      </svg>
+    `
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com',
-    icon: '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>' // idem
+    url: 'https://linkedin.com/in/yusuftopal',
+    icon: `
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
+      <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.28 108 0 83.72 0 53.64A53.64 53.64 0 01106.56 53.6c0 30.08-24.28 54.36-54.72 54.36zM447.9 448h-92.4V302.4c0-34.7-12.4-58.4-43.4-58.4-23.6 0-37.6 15.8-43.8 31.1-2.2 5.3-2.8 12.7-2.8 20.2V448h-92.5s1.2-261.6 0-288.9h92.4v40.9c12.3-19 34.3-46 83.6-46 61 0 106.8 39.8 106.8 125.2V448z"/>
+    </svg>
+  `
   }
 ]
 
