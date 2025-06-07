@@ -75,7 +75,8 @@ interface Props {
 }
 
 defineProps<Props>()
-defineEmits<{
+
+const emit = defineEmits<{
   navigate: [page: 'home' | 'about' | 'projects' | 'contact']
 }>()
 
@@ -90,10 +91,6 @@ const navItems = [
 
 const handleMobileNavigate = (page: 'home' | 'about' | 'projects' | 'contact') => {
   isMobileMenuOpen.value = false
-  // Use nextTick to ensure the emit happens after the menu closes
-  setTimeout(() => {
-    // Emit the navigate event
-    window.dispatchEvent(new CustomEvent('navigate', { detail: page }))
-  }, 0)
+  emit('navigate', page)
 }
 </script>
