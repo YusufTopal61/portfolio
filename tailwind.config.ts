@@ -4,10 +4,10 @@ import type { Config } from "tailwindcss";
 export default {
 	darkMode: ["class"],
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./pages/**/*.{vue,ts,tsx}",
+		"./components/**/*.{vue,ts,tsx}",
+		"./app/**/*.{vue,ts,tsx}",
+		"./src/**/*.{vue,ts,tsx}",
 	],
 	prefix: "",
 	theme: {
