@@ -24,7 +24,7 @@
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-white mb-6">Mijn Verhaal</h2>
+          <h2 class="text-2xl font-bold text-white mb-6">Over Mij</h2>
           <div class="text-gray-300 space-y-4 leading-relaxed">
             <p v-for="paragraph in storyParagraphs" :key="paragraph.substring(0, 50)">
               {{ paragraph }}

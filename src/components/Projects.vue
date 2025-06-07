@@ -8,29 +8,12 @@
         <p class="text-xl text-gray-400 mb-8">
           Een overzicht van de projecten die ik heb ontwikkeld
         </p>
-
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <button
-              v-for="filter in filters"
-              :key="filter.id"
-              @click="activeFilter = filter.id"
-              :class="[
-              'px-6 py-3 rounded-lg font-medium transition-all duration-300',
-              activeFilter === filter.id
-                ? 'bg-blue-600 text-white'
-                : 'bg-slate-800/50 text-gray-400 hover:bg-slate-700/50 hover:text-white'
-            ]"
-          >
-            {{ filter.label }}
-          </button>
-        </div>
       </div>
 
       <!-- Projects Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-            v-for="(project, index) in filteredProjects"
+            v-for="(project, index) in projects"
             :key="project.title"
             :class="[
             'group bg-slate-800/50 rounded-2xl p-6 hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-slate-700/50 hover:border-blue-500/50',
@@ -76,18 +59,12 @@
           </a>
         </div>
       </div>
-
-      <div v-if="filteredProjects.length === 0" class="text-center py-12">
-        <p class="text-gray-400 text-lg">
-          Geen projecten gevonden voor de geselecteerde filter.
-        </p>
-      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 
 interface Project {
   title: string
@@ -98,60 +75,43 @@ interface Project {
   featured?: boolean
 }
 
-const activeFilter = ref('all')
-
 const projects: Project[] = [
   {
     title: 'Dokkie',
     description: 'Een moderne Tikkie-achtige betaalapp ontwikkeld met TypeScript en object-georiënteerd programmeren.',
     technologies: ['HTML', 'CSS', 'TypeScript', 'OOP'],
-    link: 'https://gitlab.com',
+    link: 'https://gitlab.fdmci.hva.nl/semester-3-hbo-ict/onderwijs/student-projecten/2024-2025/out-s-se-gd/semester-1/keexuumuumuu37.git',
     category: 'frontend',
-    featured: true
   },
   {
     title: 'Code Exchange',
     description: 'Een volledig functioneel Q&A platform geïnspireerd door Stack Overflow.',
     technologies: ['HTML', 'CSS', 'TypeScript', 'OOP'],
-    link: 'https://gitlab.com',
+    link: 'https://gitlab.fdmci.hva.nl/propedeuse-hbo-ict/onderwijs/student-projecten/2023-2024/out-e-cs-se/blok-2/sooxeequulee88.git',
     category: 'frontend',
-    featured: true
   },
   {
     title: 'The Game',
     description: 'Een interactieve game met Lit en TypeScript.',
     technologies: ['TypeScript', 'Lit', 'Game Engine', 'OOP'],
-    link: 'https://gitlab.com',
+    link: 'https://gitlab.fdmci.hva.nl/propedeuse-hbo-ict/onderwijs/student-projecten/2023-2024/out-e-cs-se/blok-3/riizooxoovoo10.git',
     category: 'frontend'
   },
   {
     title: 'Webshop',
     description: 'Fullstack webshop met gebruikersauthenticatie, database en beheer.',
     technologies: ['Node.js', 'Express', 'MySQL', 'TypeScript', 'Lit'],
-    link: 'https://gitlab.com',
+    link: 'https://gitlab.fdmci.hva.nl/propedeuse-hbo-ict/onderwijs/student-projecten/2023-2024/out-e-cs-se/blok-4/haayaazoosii78.git',
     category: 'fullstack',
-    featured: true
   },
   {
     title: 'Elections',
     description: 'Realtime verkiezingsresultaten met Spring Boot + Vue.',
     technologies: ['Java', 'Spring Boot', 'Vue', 'TailwindCSS'],
-    link: 'https://gitlab.com',
+    link: 'https://gitlab.fdmci.hva.nl/semester-3-hbo-ict/onderwijs/student-projecten/2024-2025/out-s-se-gd/semester-1/luuhiijaafee13.git',
     category: 'fullstack'
   }
 ]
-
-const filters = [
-  { id: 'all', label: 'Alle Projecten' },
-  { id: 'frontend', label: 'Frontend' },
-  { id: 'fullstack', label: 'Fullstack' }
-]
-
-const filteredProjects = computed(() => {
-  return activeFilter.value === 'all'
-      ? projects
-      : projects.filter(project => project.category === activeFilter.value)
-})
 
 const getTechColor = (tech: string) => {
   const colors: Record<string, string> = {

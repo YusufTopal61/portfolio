@@ -13,9 +13,8 @@
           <span class="animate-pulse">|</span>
         </h2>
         <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          19-jarige developer uit Amsterdam-Noord, gepassioneerd over het bouwen van
-          moderne web applicaties met cutting-edge technologieën zoals TypeScript,
-          Java, Node.js en Vue.
+          19-jarige developer die graag moderne webapplicaties bouwt en
+          altijd op zoek is naar verbeteringen gebruikersvriendelijke oplossingen.
         </p>
       </div>
 
@@ -57,7 +56,7 @@ defineEmits<{
 }>()
 
 const displayText = ref('')
-const fullText = 'Fullstack Developer'
+const fullText = 'Student Software Engineering'
 
 const techStack = [
   { name: 'TypeScript', icon: '🚀' },
