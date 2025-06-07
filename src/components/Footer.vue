@@ -22,8 +22,7 @@
       </div>
 
       <div class="text-gray-500 text-sm">
-        <p>&copy; 2024 Yusuf Topal. Alle rechten voorbehouden.</p>
-        <p class="mt-1">Gebouwd met TypeScript, Vue en Tailwind CSS</p>
+        <p>&copy; 2025 Yusuf Topal. Alle rechten voorbehouden.</p>
       </div>
     </div>
   </footer>
