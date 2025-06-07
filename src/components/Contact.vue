@@ -121,10 +121,8 @@ const contactInfo = [
 
 const handleSubmit = () => {
   console.log('Form submitted:', form.value)
-  // Here you would typically send the form data to a backend
   alert('Bedankt voor je bericht! Ik neem zo snel mogelijk contact op.')
   
-  // Reset form
   form.value = {
     name: '',
     email: '',

@@ -7,7 +7,7 @@ import './index.css'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: () => import('./pages/Index.vue') },
+    { path: '/', component: () => import('./pages/Home.vue') },
   ]
 })
 
