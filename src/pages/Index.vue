@@ -1,16 +1,20 @@
-
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
     <Navbar :current-page="currentPage" @navigate="setCurrentPage" />
+
     <main class="transition-all duration-500 ease-in-out">
       <component :is="currentComponent" @navigate="setCurrentPage" />
     </main>
+
     <Footer />
-    
+
     <!-- Loading Screen -->
-    <div v-if="isLoading" class="fixed inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center z-50">
+    <div
+        v-if="isLoading"
+        class="fixed inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center z-50"
+    >
       <div class="text-center">
-        <div class="w-16 h-16 border-4 border-purple-400 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
         <p class="text-white text-lg font-medium">Portfolio wordt geladen...</p>
       </div>
     </div>
