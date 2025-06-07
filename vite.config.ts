@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
@@ -6,8 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/portfolio/',   // <<<<<<<<<< hier je subpath toevoegen
   server: {
-    host: "https://yusuftopal61.github.io/portfolio/",
+    host: "::",
     port: 8080,
   },
   plugins: [
