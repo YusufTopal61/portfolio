@@ -142,7 +142,7 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/yusuftopal',
+    url: 'https://linkedin.com/in/-yusuftopal',
     icon: `
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
       <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.28 108 0 83.72 0 53.64A53.64 53.64 0 01106.56 53.6c0 30.08-24.28 54.36-54.72 54.36zM447.9 448h-92.4V302.4c0-34.7-12.4-58.4-43.4-58.4-23.6 0-37.6 15.8-43.8 31.1-2.2 5.3-2.8 12.7-2.8 20.2V448h-92.5s1.2-261.6 0-288.9h92.4v40.9c12.3-19 34.3-46 83.6-46 61 0 106.8 39.8 106.8 125.2V448z"/>
