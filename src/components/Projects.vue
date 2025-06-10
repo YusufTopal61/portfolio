@@ -80,7 +80,7 @@ const projects: Project[] = [
     title: 'Dokkie',
     description: 'Een moderne Tikkie-achtige betaalapp ontwikkeld met TypeScript en object-georiënteerd programmeren.',
     technologies: ['HTML', 'CSS', 'TypeScript', 'OOP'],
-    link: 'https://gitlab.fdmci.hva.nl/semester-3-hbo-ict/onderwijs/student-projecten/2024-2025/out-s-se-gd/semester-1/keexuumuumuu37.git',
+    link: 'https://gitlab.fdmci.hva.nl/propedeuse-hbo-ict/onderwijs/student-projecten/2023-2024/out-e-cs-se/PB1-topaly1.git',
     category: 'frontend',
   },
   {
